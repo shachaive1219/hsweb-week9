@@ -3,43 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>9주차 예제 1 · 켜는 곳은 자식이 아니라 부모입니다</title>
+
   <style>
-/*
-    9주차 예제 1 — 켜는 곳은 자식이 아니라 부모입니다.
+    /*
+      9주차 예제 1 — 켜는 곳은 자식이 아니라 부모입니다.
 
-    [주요 개념]
-    부모 요소인 .container에 display: flex를 선언하면
-    자식 요소들이 기본적으로 가로 방향으로 배치됩니다.
-*/
+      [주요 개념]
+      부모 요소인 .container에 display: flex를 선언하면
+      자식 요소들이 기본적으로 가로 방향으로 배치됩니다.
+    */
 
-.container {
-    display: flex;           /* 부모 요소를 Flex 컨테이너로 설정 */
-    background-color: red; /* 배경색을 빨간색으로 변경 */
-}
+    .container {
+      display: flex;           /* 부모 요소를 Flex 컨테이너로 설정 */
+      background-color: red;   /* 부모 요소의 배경색을 빨간색으로 설정 */
+    }
 
-/*
-    [주석 설명]
-    1. display: flex;
-       → 자식 요소들을 가로 방향으로 배치합니다.
+    /*
+      [주석 설명]
 
-    2. background-color: yellow;
-       → 부모 요소인 .container의 배경을 빨간색으로 설정합니다.
+      1. display: flex;
+         → 자식 요소들을 기본적으로 가로 방향으로 배치합니다.
 
-    3. 부모 요소에 display: flex를 선언해야 합니다.
-       → 자식 요소에 선언하는 것이 아닙니다.
-*/
+      2. background-color: red;
+         → 부모 요소인 .container의 배경을 빨간색으로 설정합니다.
+
+      3. 부모 요소에 display: flex를 선언해야 합니다.
+         → 자식 요소에 선언하는 것이 아닙니다.
+    */
   </style>
 </head>
+
 <body>
+
   <h1>제목 h1</h1>
-  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
-  <ul>
-    <li>목록 1. 202678261</li>
-    <li>목록 2. 박상현</li>
-    <li>목록 3. AI.SW 계열</li>
-  </ul>
-  <div class="box">div.box</div>
-  <button>버튼</button>
+
+  <p class="intro">
+    문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.
+  </p>
+
+  <!-- Flex 속성을 적용할 부모 요소 -->
+  <div class="container">
+
+    <!-- 아래 요소들은 .container의 자식 요소입니다. -->
+    <ul>
+      <li>목록 1.202678261 </li>
+      <li>목록 2.박상현</li>
+      <li>목록 3.AI.SW 계열</li>
+    </ul>
+
+    <div class="box">div.box</div>
+
+    <button>버튼</button>
+
+  </div>
+
 </body>
 </html>
