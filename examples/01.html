@@ -5,13 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>9주차 예제 1 · 켜는 곳은 자식이 아니라 부모입니다</title>
   <style>
-    /*
-    9주차 예제 1 — 켜는 곳은 자식이 아니라 부모입니다
-    */
-    .container {        /* ← 부모(flex container)에 선언 */
-      display: flex;
-    }
-    /* .container의 자식들(flex item)이 자동으로 가로로 늘어섭니다. */
+/*
+    9주차 예제 1 — 켜는 곳은 자식이 아니라 부모입니다.
+
+    [주요 개념]
+    부모 요소인 .container에 display: flex를 선언하면
+    자식 요소들이 기본적으로 가로 방향으로 배치됩니다.
+*/
+
+.container {
+    display: flex;           /* 부모 요소를 Flex 컨테이너로 설정 */
+    background-color: yellow; /* 배경색을 노란색으로 변경 */
+}
+
+/*
+    [주석 설명]
+    1. display: flex;
+       → 자식 요소들을 가로 방향으로 배치합니다.
+
+    2. background-color: yellow;
+       → 부모 요소인 .container의 배경을 노란색으로 설정합니다.
+
+    3. 부모 요소에 display: flex를 선언해야 합니다.
+       → 자식 요소에 선언하는 것이 아닙니다.
+*/
   </style>
 </head>
 <body>
